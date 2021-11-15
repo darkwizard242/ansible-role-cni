@@ -1,0 +1,17 @@
+---
+# tasks file for cni | EL Family
+
+- name: "EL Family | Ensure directory for CNI plugins {{ cni_plugins_dir }} exists"
+  file:
+    path: "{{ cni_plugins_dir }}"
+    state: directory
+    mode: '0755'
+    owner: root
+    group: root
+
+- name: "EL Family | Downloading/Extracting archive for {{ cni_app }} {{ cni_version }} to {{ cni_plugins_dir }}"
+  unarchive:
+    src: "{{ cni_dl_url }}"
+    dest: "{{ cni_plugins_dir }}"
+    mode: "{{ cni_plugins_dir_mode }}"
+    remote_src: yes

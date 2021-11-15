@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: kubectl
+  role_name: cni
   author: darkwizard242
   description: Installs/Uninstalls CNI, i.e. Container Network Interface plugins.
   company: none

@@ -1,0 +1,10 @@
+---
+# defaults file for cni
+
+cni_app: cni
+cni_version: 1.0.1
+cni_os: linux
+cni_arch: amd64
+cni_dl_url: "https://github.com/containernetworking/plugins/releases/download/v{{ cni_version }}/cni-plugins-{{ cni_os }}-{{ cni_arch }}-v{{ cni_version }}.tgz"
+cni_plugins_dir: /opt/cni/bin
+cni_plugins_dir_mode: '0755'

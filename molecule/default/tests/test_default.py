@@ -8,8 +8,8 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 BINARIES_DIR = '/opt/cni/bin/'
 BINARIES = ['bandwidth', 'bridge', 'dhcp', 'firewall', 'host-device',
-           'host-local', 'ipvlan', 'loopback', 'macvlan', 'portmap', 'ptp',
-           'sbr', 'static', 'tuning', 'vlan', 'vrf' ]
+            'host-local', 'ipvlan', 'loopback', 'macvlan', 'portmap', 'ptp',
+            'sbr', 'static', 'tuning', 'vlan', 'vrf']
 
 
 def test_cni_binaries_exists(host):

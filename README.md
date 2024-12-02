@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 cni_app: cni
-cni_version: 1.6.0
+cni_version: 1.6.1
 cni_os: linux
 cni_arch: amd64
 cni_dl_url: "https://github.com/containernetworking/plugins/releases/download/v{{ cni_version }}/cni-plugins-{{ cni_os }}-{{ cni_arch }}-v{{ cni_version }}.tgz"
@@ -29,7 +29,7 @@ cni_plugins_dir_mode: '0755'
 Variable             | Description
 -------------------- | --------------------------------------------------------------------------------------------------------------------------------
 cni_app              | Defines the app to install i.e. **cni**
-cni_version          | Defined to dynamically fetch the desired version to install. Defaults to: **1.6.0**
+cni_version          | Defined to dynamically fetch the desired version to install. Defaults to: **1.6.1**
 cni_os               | Defines OS type. Defaults to: **linux**
 cni_arch             | Defines os architecture. Used for obtaining the correct type of binaries based on OS System Architecture. Defaults to: **amd64**
 cni_dl_url           | Defines URL to download the cni binaries archive from.
